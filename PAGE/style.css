@@ -1,0 +1,131 @@
+:root {
+	--Colp1: #C26555;
+	--Colp1hov: #dd8272;
+	--ColS2: #192421;
+	--ColBack: #000000ae;
+	--ColShad1: #FFF;
+	--ColShad2: #000;
+	--ColShad3: #002395;
+	--ColShad4: #ffffff49;
+	--Text1: #C26555;
+	--Text2: #000;
+	--Text3: #FFF;
+}
+
+body{
+   height: 10000px;
+}
+header {
+	top: 0;
+   left:0;
+	width: 100%;
+	height: 110px;
+	position: fixed;
+	margin-top: 0;
+	display: flex;
+	background-color: #C26555;
+	color: white;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1002;
+}
+
+header a {
+	color: var(--Text3);
+	text-decoration: none;
+}
+
+#menu-toggle {
+	display: none;
+}
+
+.menu-btn {
+	top: 20px;
+   margin-right: 50px ;
+   width: 35px;
+   cursor: pointer;
+   z-index: 1001;
+}
+
+.menu-btn span {
+	display: block;
+	height: 6px;
+   width: 40px;
+	background: white;
+	box-shadow: var(--ColShad4) 2px 2px 1px;
+	margin: 12px 0;
+	border-radius: 2px;
+	transition: 0.3s;
+}
+
+/*###################################################
+#                      Animation                    #
+###################################################*/
+
+#menu-toggle:checked+.menu-btn span:nth-child(1) {
+	transform: rotate(45deg) translate(16px, 16px);
+}
+
+#menu-toggle:checked+.menu-btn span:nth-child(2) {
+	opacity: 0;
+}
+
+#menu-toggle:checked+.menu-btn span:nth-child(3) {
+	transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/*###################################################
+#                     menu                          #
+###################################################*/
+
+header nav {
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 200px;
+	height: 100%;
+	background: var(--ColBack);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	transition: right 0.3s ease;
+	z-index: 1000;
+	color: var(--Text3);
+	text-shadow: var(--ColShad1) 1px 1px 1px;
+}
+
+#menu-toggle:checked~nav {
+	right: 0;
+}
+.menu-toggle{
+   width: 100px;
+}
+
+header a {
+	margin-top: 25%;
+	color: var(--Text3);
+	text-decoration: none;
+	font-size: 24px;
+	transition: color 0.2s;
+}
+header figure{
+   left: 0;
+}
+div ul button {
+
+	background: #C26555;
+	height: 110px;
+	width: 250px;
+	margin-right: 50px;
+	border: none;
+	box-shadow: white 0px 0px 3px;
+	font-size: 20px;
+	color: white;
+	text-shadow: black 2px 1px 1px;
+}
+
+div ul button:hover {
+	background-color: #C1FFC1;
+   color: black;
+}
