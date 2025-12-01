@@ -1,26 +1,23 @@
 :root {
 	--Colp1: #C26555;
-	--Colp1hov: #dd8272;
-	--ColS2: #192421;
 	--ColBack: #000000ae;
 	--ColShad1: #FFF;
-	--ColShad2: #000;
-	--ColShad3: #002395;
 	--ColShad4: #ffffff49;
 	--Text1: #C26555;
-	--Text2: #000;
 	--Text3: #FFF;
 }
-
 body{
-   height: 10000px;
+	margin: 0;
+	padding: 0;
+	text-shadow: var(--ColShad1) 1px 1px 1px;
 }
+
 header {
+	position: sticky;
 	top: 0;
-   left:0;
+	left: 0;
 	width: 100%;
 	height: 110px;
-	position: fixed;
 	margin-top: 0;
 	display: flex;
 	background-color: #C26555;
@@ -28,6 +25,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	z-index: 1002;
+	box-shadow: var(--ColBack) 0px 2px 10px;
 }
 
 header a {
@@ -39,18 +37,18 @@ header a {
 	display: none;
 }
 
-.menu-btn {
+label {
 	top: 20px;
-   margin-right: 50px ;
-   width: 35px;
-   cursor: pointer;
-   z-index: 1001;
+	margin-right: 50px;
+	width: 35px;
+	cursor: pointer;
+	z-index: 1001;
 }
 
-.menu-btn span {
+label span {
 	display: block;
 	height: 6px;
-   width: 40px;
+	width: 40px;
 	background: white;
 	box-shadow: var(--ColShad4) 2px 2px 1px;
 	margin: 12px 0;
@@ -62,15 +60,15 @@ header a {
 #                      Animation                    #
 ###################################################*/
 
-#menu-toggle:checked+.menu-btn span:nth-child(1) {
+#menu-toggle:checked+label span:nth-child(1) {
 	transform: rotate(45deg) translate(16px, 16px);
 }
 
-#menu-toggle:checked+.menu-btn span:nth-child(2) {
+#menu-toggle:checked+label span:nth-child(2) {
 	opacity: 0;
 }
 
-#menu-toggle:checked+.menu-btn span:nth-child(3) {
+#menu-toggle:checked+label span:nth-child(3) {
 	transform: rotate(-45deg) translate(7px, -7px);
 }
 
@@ -94,14 +92,32 @@ header nav {
 	color: var(--Text3);
 	text-shadow: var(--ColShad1) 1px 1px 1px;
 }
-
+main{
+	height: 100vh;
+}
 #menu-toggle:checked~nav {
 	right: 0;
 }
-.menu-toggle{
-   width: 100px;
+header nav a {
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+	border-bottom: 1px solid var(--ColShad4);
+	border-top: 1px solid var(--ColShad4);
 }
-
+header nav a:first-child {
+	margin-top: 150px ;
+}
+header nav a:hover {
+	background-color: var(--Colp1);
+	color: var(--Text3);
+}
+header nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: top;
+}
 header a {
 	margin-top: 25%;
 	color: var(--Text3);
@@ -109,11 +125,12 @@ header a {
 	font-size: 24px;
 	transition: color 0.2s;
 }
-header figure{
-   left: 0;
-}
-div ul button {
 
+header figure {
+	left: 0;
+}
+
+div ul button {
 	background: #C26555;
 	height: 110px;
 	width: 250px;
@@ -124,8 +141,28 @@ div ul button {
 	color: white;
 	text-shadow: black 2px 1px 1px;
 }
-
 div ul button:hover {
 	background-color: #C1FFC1;
-   color: black;
+	color: black;
+}
+
+
+/*###################################################
+#                     footer                        #	
+###################################################*/
+
+footer {
+	bottom: 0;
+	left: 0;
+	margin-bottom: 0;
+	width: 100%;
+	height: 150px;
+	background-color: var(--Colp1);
+	color: white;
+	font-size: 14px;
+	text-align: center;
+}
+footer p {
+	margin: 0;
+	padding: 10px;
 }
