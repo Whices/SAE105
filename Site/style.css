@@ -1,0 +1,86 @@
+.historique {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.un {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.deux {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    color: #C26555;
+}
+
+.trois {
+    grid-column: 1/4;
+    grid-row: 2;
+    color: white;
+    background-color: #C26555;
+}
+
+.quatre {
+    grid-column: 1;
+    grid-row: 3;
+    color: #C26555;
+}
+
+.cinq {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.six {
+    grid-column: 3;
+    grid-row: 3;
+    color: #C26555;
+}
+
+.un, .cinq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #C26555;
+    padding: 1em;
+}
+
+.deux, .trois, .quatre, .six {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+h2 {
+    font-size: 70px;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    color: #C26555;
+    border: 2px solid #C26555;
+}
+
+main > article > figure {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #C26555;
+    padding: 1em;
+}
+
+main > article > div {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+    background-color: #C26555;
+}
