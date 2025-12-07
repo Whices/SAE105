@@ -1,12 +1,18 @@
 :root {
 	--Colp1: #C26555;
+	--Colp2: #FFB200;
+	--Colp3: #C1FFC1;
 	--ColBack: #000000ae;
 	--ColShad1: #FFF;
 	--ColShad4: #ffffff49;
 	--Text1: #C26555;
 	--Text3: #FFF;
 }
-body{
+*{
+	 box-sizing: border-box;
+
+}
+body {
 	margin: 0;
 	padding: 0;
 }
@@ -92,12 +98,11 @@ header nav {
 	color: var(--Text3);
 	text-shadow: var(--ColShad1) 1px 1px 1px;
 }
-main{
-	height: 100vh;
-}
+
 #menu-toggle:checked~nav {
 	right: 0;
 }
+
 header nav a {
 	width: 100%;
 	text-align: center;
@@ -105,14 +110,17 @@ header nav a {
 	border-bottom: 1px solid var(--ColShad4);
 	border-top: 1px solid var(--ColShad4);
 }
+
 header nav a:first-child {
-	margin-top: 50px ;
+	margin-top: 50px;
 }
+
 header nav a:hover {
 	background-color: var(--Colp1);
 	color: var(--Text3);
 }
-header nav{
+
+header nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -120,6 +128,7 @@ header nav{
 	border: #C26555 solid 3px;
 	border-radius: 0px 0px 0px 20px;
 }
+
 header a {
 	margin-top: 25%;
 	color: var(--Text3);
@@ -143,11 +152,92 @@ div ul button {
 	color: white;
 	text-shadow: black 2px 1px 1px;
 }
+
 div ul button:hover {
 	background-color: #C1FFC1;
 	color: black;
 }
 
+/*###################################################
+#                     main                          #
+###################################################*/
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--Text3);
+}
+
+section {
+	width: 100%;
+}
+
+main>section {
+	width: 100%;
+	padding: 0;
+	margin: auto;
+}
+
+main {
+	background-image: url(../IMAGES/img_acc/bg1.jpeg); 
+	background-size:cover;
+	background-repeat: no-repeat;
+	
+}
+
+
+
+main section article {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow: var(--ColShad4) 0px 2px 10px;
+	width: 60%;
+	height: 150px;
+}
+
+main section #anim1 {
+	border-radius: 15px 15px 0px 0;
+	margin-bottom: 15px;
+	background-color: var(--Colp2);
+}
+
+#anim1 figure {
+	border-radius: 15px 15px 0px 0;
+	background-color: red;
+	width: 100px;
+}
+
+main section #anim2 {
+	margin-bottom: 15px;
+	background-color: var(--Colp1);
+}
+
+main section #anim3 {
+	border-radius: 0 0 15px 15px;
+	margin-bottom: 15px;
+	background-color: var(--Colp3);
+}
+
+
+
+
+main  section:nth-child(1) {
+	height: 500px;
+	width: 100%;
+}
+main  section:nth-child(1) article{
+	bottom: 0;
+	width: 100%;
+	height: 150px;
+	background-color: #C26555;
+	margin: 0;
+	max-width: none;
+ margin-top: 300px;
+
+}
 
 /*###################################################
 #                     footer                        #	
@@ -164,9 +254,11 @@ footer {
 	padding: 15px;
 	box-sizing: border-box;
 }
-footer{
+
+footer {
 	box-shadow: var(--ColBack) 0px -2px 7px;
 }
+
 footer p {
 	margin: 0;
 	padding: 10px;
@@ -181,7 +273,8 @@ footer section {
 	justify-content: space-around;
 	align-items: flex-start;
 }
-footer ul{
+
+footer ul {
 	text-align: start;
 }
 
@@ -189,6 +282,7 @@ footer section div {
 	font-weight: 700;
 	margin-bottom: 8px;
 }
+
 footer section a {
 	color: white;
 	text-decoration: none;
