@@ -161,8 +161,15 @@ div ul button:hover {
 /*###################################################
 #                     main                          #
 ###################################################*/
+article{
+    background-color: #FFB200;
+    margin: 10%;
+    border-radius: 30px;
+}
 
-
+article p{
+    padding: 2em;
+}
 
 /*###################################################
 #                     footer                        #	
@@ -212,6 +219,11 @@ footer section a {
 	color: white;
 	text-decoration: none;
 }
+
+/*###################################################
+#                   titres                          #
+###################################################*/
+
 h1{
     font-weight: bold;
     font-size: 96px;
