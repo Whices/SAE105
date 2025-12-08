@@ -163,12 +163,19 @@ div ul button:hover {
 ###################################################*/
 article{
     background-color: #FFB200;
-    margin: 10%;
+    margin: 5%;
     border-radius: 30px;
 }
 
 article p{
     padding: 2em;
+}
+
+section div{
+	background-color: #FFB200;
+    margin: 5%;
+	margin-right: 55%;
+    border-radius: 30px;
 }
 
 /*###################################################
