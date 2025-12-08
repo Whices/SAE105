@@ -287,3 +287,15 @@ footer section a {
 	color: white;
 	text-decoration: none;
 }
+h1{
+    font-weight: bold;
+    font-size: 96px;
+}
+h2{
+    font-weight: bold;
+    font-size: 64px;
+}
+h3{
+    font-weight: bold;
+    font-size: 48px;
+}
