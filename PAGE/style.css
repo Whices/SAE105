@@ -153,6 +153,9 @@ header div ul {
 	padding: 0;
 	list-style: none;
 }
+
+
+
 div ul button {
 	background: #C26555;
 	height: 110px;
@@ -284,6 +287,71 @@ main  section:nth-child(1) article{
  	margin-top: 330px;
 
 }
+
+.gr-btn-1, .gr-btn-2, .gr-btn-3 {
+	display: none;
+}
+
+#anim1:hover{
+	& .gr-btn-1{
+		display: flex;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 90%;
+	}
+	height: 300px;
+}
+.btn-1{
+	width: 100px;
+	height: 40px;
+	background-color: #FFB200;
+	border: none;
+	border-radius: 5px;
+	box-shadow: black 2px 2px 5px;
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+	text-shadow: black 1px 1px 2px;
+}
+.btn-2{
+	width: 100px;
+	height: 40px;
+	background-color: #C26555;
+	border: none;
+	border-radius: 5px;
+	box-shadow: black 2px 2px 5px;
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+	text-shadow: black 1px 1px 2px;
+}
+#anim2:hover{
+	& .gr-btn-2{
+		display: flex;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+		width: 70%;
+		flex-wrap: wrap;
+
+	}
+	height: 300px;
+}
+
+#anim3:hover{
+	& .gr-btn-3{
+		display: flex;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	height: 300px;
+}
+
+
 
 /*###################################################
 #                     footer                        #	
