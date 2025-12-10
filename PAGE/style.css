@@ -140,12 +140,25 @@ header a {
 header figure {
 	left: 0;
 }
-
+header div{
+	width: 60%;
+	height: 110px;
+}
+header div ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 110px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 div ul button {
 	background: #C26555;
 	height: 110px;
-	width: 250px;
-	margin-right: 50px;
+	padding: 0;
+	margin: auto;
+	width: 10em;
 	border: none;
 	box-shadow: white 0px 0px 3px;
 	font-size: 20px;
