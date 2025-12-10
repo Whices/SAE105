@@ -101,6 +101,21 @@ header nav {
 	text-shadow: var(--ColShad1) 1px 1px 1px;
 }
 
+header div ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 110px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header div {
+	width: 60%;
+	height: 110px;
+}
+
 #menu-toggle:checked~nav {
 	right: 0;
 }
@@ -135,7 +150,7 @@ header a {
 	margin-top: 25%;
 	color: var(--Text3);
 	text-decoration: none;
-	font-size: 24px;
+	font-size: 20px;
 	transition: color 0.2s;
 }
 
@@ -213,8 +228,7 @@ div ul button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid #C26555;
-	padding: 1em;
+	padding: 10px;
 }
 
 .deux,
@@ -227,28 +241,27 @@ div ul button:hover {
 	align-items: center;
 	border-bottom-right-radius: 10px;
 	border-top-left-radius: 10px;
+	padding: 10px;
 }
 
-h2 {
-	font-size: 70px;
-	height: auto;
-	width: 40%;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	justify-content: center;
-	color: #C26555;
-	border: 2px solid #C26555;
+.imp {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
 }
 
-main>article>figure {
+.sept {
+	grid-column: 1;
+	grid-row: 1;
 	display: flex;
 	justify-content: center;
-	border: 2px solid #C26555;
 	padding: 1em;
 }
 
-main>article>div {
+.huit {
+	grid-column: 2/4;
+	grid-row: 1;
 	font-size: 35px;
 	display: flex;
 	justify-content: center;
@@ -257,6 +270,32 @@ main>article>div {
 	border-top-left-radius: 10px;
 	color: white;
 	background-color: #C26555;
+	padding: 10px;
+}
+
+.pImportants {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #C26555;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 10px;
+}
+
+h2 {
+	font-size: 70px;
+	height: auto;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	color: #C26555;
+	border: 2px solid #C26555;
+	padding: 10px;
 }
 
 section:nth-last-child(1) article p {
@@ -273,6 +312,28 @@ section:nth-last-child(1) article{
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+}
+
+mark {
+	background-color: #C26555;
+	color: #FFF;
+}
+
+.bio {
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #C26555;
+}
+
+/* .bio:nth-last-child(-n + 3) {
+	display: none;
+} */
+
+main {
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /*###################################################
@@ -323,3 +384,4 @@ footer section a {
 	color: white;
 	text-decoration: none;
 }
+
