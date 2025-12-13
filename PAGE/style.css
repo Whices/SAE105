@@ -181,6 +181,10 @@ section div{
     border-radius: 30px;
 }
 
+section > div, article {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
 section div img {
     display: block;
     margin: 0 auto 20px auto;
