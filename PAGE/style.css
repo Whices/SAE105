@@ -171,13 +171,61 @@ article p{
     padding: 2em;
 }
 
+
+
 section div{
 	background-color: #FFB200;
     margin: 5%;
-	margin-right: 55%;
+	margin-right: 13%;
+	margin-left: 13%;
     border-radius: 30px;
 }
 
+section div img {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.ligne_d_information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+	padding-bottom: 15px;
+}
+
+.ligne_d_information h3 {
+    width: 420px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.ligne_d_information p {
+    margin: 0;
+}
+
+.img-animation {
+    display: block;
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+}
+
+@keyframes agrandir {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.5); }
+}
+
+@keyframes reduire {
+    0% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+.img-animation:hover {
+    animation: agrandir 0.5s forwards;
+}
+
+.img-animation {
+    animation: reduire 0.5s forwards;
+}
 /*###################################################
 #                     footer                        #	
 ###################################################*/
@@ -228,7 +276,7 @@ footer section a {
 }
 
 /*###################################################
-#                   titres                          #
+#                   texte                          #
 ###################################################*/
 
 h1{
@@ -238,8 +286,15 @@ h1{
 h2{
     font-weight: bold;
     font-size: 64px;
+	text-align: center;
+	padding-top: 0.5em;
 }
 h3{
     font-weight: bold;
     font-size: 48px;
+	padding-left: 0.5em;
+}
+
+p{
+	font-size: 35px;
 }
