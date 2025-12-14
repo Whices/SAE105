@@ -562,6 +562,8 @@ summary {
 	color: #C26555;
 	border: 2px solid #C26555;
 	padding: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
 }
 
 section:nth-last-child(1) article p {
