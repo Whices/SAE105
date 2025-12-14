@@ -363,6 +363,163 @@ summary {
 	align-items: center;
 }
 
+/*##################################################*/
+
+
+
+
+
+.historique {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+}
+
+.un {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.deux {
+	grid-column: 2 / 4;
+	grid-row: 1;
+	color: #C26555;
+}
+
+.trois {
+	grid-column: 1/4;
+	grid-row: 2;
+	color: white;
+	background-color: #C26555;
+}
+
+.quatre {
+	grid-column: 1;
+	grid-row: 3;
+	color: #C26555;
+}
+
+.cinq {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.six {
+	grid-column: 3;
+	grid-row: 3;
+	color: #C26555;
+}
+
+.un,
+.cinq {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.deux,
+.trois,
+.quatre,
+.six {
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 10px;
+}
+
+.imp {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+}
+
+.sept {
+	grid-column: 1;
+	grid-row: 1;
+	display: flex;
+	justify-content: center;
+	padding: 1em;
+}
+
+.huit {
+	grid-column: 2/4;
+	grid-row: 1;
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	color: white;
+	background-color: #C26555;
+	padding: 10px;
+}
+
+.pImportants {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #C26555;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 10px;
+}
+
+h2 {
+	font-size: 70px;
+	height: auto;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	color: #C26555;
+	border: 2px solid #C26555;
+	padding: 10px;
+}
+
+section:nth-last-child(1) article p {
+	display: none;
+}
+section:nth-last-child(1) article p:nth-child(1) {
+	width: 50%;
+	order: 2;
+	display: block;
+
+}
+section:nth-last-child(1) article{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+mark {
+	background-color: #C26555;
+	color: #FFF;
+}
+
+.bio {
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #C26555;
+}
+main {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
 
 /*###################################################
 #                     main                          #
