@@ -429,11 +429,15 @@ main h2 {
     font-size:64px;
 }
 
-h1{
+.h1perso{
+    display:flex;
     font-size:96px;
     border: 5px solid black;
     padding:20px;
     background-color: #C1FFC1;
+    width: 15em;
+    justify-content: center;
+    justify-self: center;
 }
 
 .parag ,figcaption,summary{
