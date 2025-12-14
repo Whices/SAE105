@@ -500,7 +500,10 @@ main h2 {
 .histoirelubu > details {
     grid-column:3/9;
     grid-row:1;
-    text-align: left;
+    text-align: center;
+    margin-right: 6em;
+    margin-left: 1em;
+    margin-top: -5em;
 }
 
 .articleoeuvre1 {
