@@ -365,10 +365,6 @@ summary {
 
 /*##################################################*/
 
-
-
-
-
 .historique {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -473,7 +469,9 @@ summary {
 	padding: 10px;
 }
 
-h2 {
+#pImp,
+#historique,
+#impacts {
 	font-size: 70px;
 	height: auto;
 	width: 60%;
@@ -514,11 +512,6 @@ mark {
 	align-items: center;
 	color: #C26555;
 }
-main {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
 
 
 /*###################################################
