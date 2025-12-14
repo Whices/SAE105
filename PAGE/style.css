@@ -195,19 +195,17 @@ header div ul button:hover {
 
 /*#########################################*/
 
-article {
+main > div > div section article {
 	background-color: #FFB200;
 	margin: 5%;
 	border-radius: 30px;
 }
 
-article p {
+main div div article p {
 	padding: 2em;
 }
 
-
-
-section div {
+main div div section div {
 	background-color: #FFB200;
 	margin: 5%;
 	margin-right: 13%;
@@ -215,12 +213,12 @@ section div {
 	border-radius: 30px;
 }
 
-section>div,
-article {
+main div div section>div,
+main div div article {
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-section div img {
+main div div section div img {
 	display: block;
 	margin: 0 auto 20px auto;
 }
@@ -581,7 +579,12 @@ section:nth-last-child(1) article{
 	align-items: center;
 	flex-wrap: wrap;
 }
-
+main div div section:nth-last-child(1) p{
+	display: block;
+}
+main div div h2{
+	background-color: #00000000;
+}
 mark {
 	background-color: #C26555;
 	color: #FFF;
