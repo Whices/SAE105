@@ -203,6 +203,7 @@ main > div > div section article {
 
 main div div article p {
 	padding: 2em;
+	font-size: 35px;
 }
 
 main div div section div {
@@ -238,6 +239,7 @@ main div div section div img {
 
 .ligne_d_information p {
 	margin: 0;
+	font-size: 35px;
 }
 
 .img-animation {
